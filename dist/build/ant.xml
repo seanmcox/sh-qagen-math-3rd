@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="jar" name="SH: QAGen, Math 3rd Grade">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="jar">
+        <jar destfile="../install/sh.subject.math.3rd.jar">
+            <manifest>
+                <attribute name="Bundle-Name" value="SH: QAGen, Math 3rd Grade"/>
+                <attribute name="Bundle-Description" value="A bundle that registers an implementation of a SubjectQuestionGenerator."/>
+                <attribute name="Bundle-Vendor" value="The Shtick"/>
+                <attribute name="Bundle-Version" value="0.1.0"/>
+                <attribute name="Bundle-Activator" value="com.shtick.apps.sh.qagen.math.third.bundle.Activator"/>
+                <attribute name="Import-Package" value="org.osgi.framework,com.shtick.apps.sh.core"/>
+            </manifest>
+            <fileset dir="../../bin"/>
+        </jar>
+    </target>
+
+	<target name="jar_and_bundle" depends="jar">
+        <copy file="../install/sh.subject.math.3rd.jar" todir="${dir.workspace}/SH Main/dist/install/bundle"/>
+    </target>
+</project>
