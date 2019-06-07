@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project default="jar" name="SH: QAGen, Math 3rd Grade">
-    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/../../.."/>
+    <property name="dir.project" value="${dir.buildfile}/../.."/>
+
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
     <target name="jar">
         <jar destfile="../install/sh.subject.math.3rd.jar">
@@ -17,6 +21,6 @@
     </target>
 
 	<target name="jar_and_bundle" depends="jar">
-        <copy file="../install/sh.subject.math.3rd.jar" todir="${dir.workspace}/SH Main/dist/install/bundle"/>
+        <copy file="../install/sh.subject.math.3rd.jar" todir="${dir.workspace}/sh-main/dist/install/bundle"/>
     </target>
 </project>
